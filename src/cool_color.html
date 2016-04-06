@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>渐变的颜色块</title>
+	<link rel="stylesheet" href="css/cool.css">
+</head>
+<body>
+<div class="waper">
+	<div id="add">
+		hello   大家好！！！！！
+	</div>	
+</div>
+<div id="button">touch me</div>
+<input type="checkbox" class="box_check" id="adad">
+<label for="adad">adadad</label>
+<script>
+	var Obtn = document.getElementById("button");
+	var Owaper = document.getElementsByClassName("waper")[0];
+	var flag = 0;
+	Owaper.onclick = function(e){
+		console.log(e.target);
+		alert(document.title)
+	}
+
+	Obtn.onclick = function(){
+		//alert('aad');
+		var Owar = getElementsByClass('waper');
+		
+		Owar.style.visibility = "inherit";
+
+	};
+
+
+	function getElementsByClass(classname){
+		var ClassObj;
+		var arr = document.querySelectorAll('div');
+		for(var i=0;i<arr.length;i++){
+			if(arr[i].className == classname){
+				ClassObj = arr[i];
+			}
+		}
+		return ClassObj;
+	}
+</script>
+</body>
+
+</html>

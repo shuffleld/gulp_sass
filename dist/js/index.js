@@ -1,0 +1,1 @@
+"use strict";!function(){var t=document.getElementById("div");t.onclick=function(){alert("hello_word")}}();

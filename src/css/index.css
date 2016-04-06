@@ -1,0 +1,10 @@
+*{
+	margin: 0;
+	padding: 0;
+}
+#div{
+	background-color: red;
+	overflow: hidden;
+	width: 100px;
+	height: 100px;
+}

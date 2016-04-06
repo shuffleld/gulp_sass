@@ -1,0 +1,58 @@
+$xxx : #eee;
+$eee:#9d9d9d;
+$init_color:#9d9d9d;
+$init_fontsize:36px;
+$inn:5;
+$bor_sty:#f3961c transparent transparent transparent;
+body{
+	color:$init_color;
+	font-size: $init_fontsize  ;
+} 
+.font_color{
+	color:green;
+}
+@mixin init($bb){
+	border: $bb solid #000;
+}
+#div1{
+	width: 400px;
+	height: 200px;
+	background-color: lighten($xxx, 0.5%); 
+	@include init(5px);
+	span{
+		/*@extend:.font_color;*/
+		@extend .font_color;
+		background-color: red;
+		&:after{
+			content:"";
+			width: 0;
+			height: 0;
+			border-width: 15px;
+			border-style: solid;
+			border-color: $bor_sty;
+		}
+	}
+}
+
+@for $inn from  1 to 6{
+	.ww#{$inn}{
+		background: lighten($eee, 0.5% * $inn * $inn )
+	}
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
