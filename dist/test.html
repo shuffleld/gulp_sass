@@ -2,10 +2,49 @@
 <html lang="en">
 <head>
 	<meta charset="UTF-8">
-	<title>
-	</title>
+	<title>测试页面</title>
+	<style>
+		.dialog{
+			display: none;
+			position: absolute;
+			left: 20px;
+			border:1px solid #9d9d9d;
+			background-color: #eee;
+			border-radius: 5px;
+			height: 30px;
+			margin-top: 10px
+		}
+		.dialog:after{
+			content:"";
+			width: 0;
+			height: 0;
+			border-style: solid;
+			border-width: 5px;
+			border-color: transparent transparent #9d9d9d transparent;
+			position: relative;
+			top:-38px;
+			left:10px;
+			
+		}
+		.wraper{
+
+			position: relative;
+		}
+	</style>
 </head>
-<body>
-	
+<body>    
+	sdsd
+	<div class="wraper">
+		<span id="touch_me">wwwwwww</span>
+
+		<div class="dialog">
+			大家好，我是dialog!!!!
+		</div>
+	</div>
+
+
+	<script src="js/jquery.min.js"></script>
+	<script src="js/test.js"></script>
+
 </body>
 </html>
